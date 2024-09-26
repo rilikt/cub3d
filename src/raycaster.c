@@ -6,7 +6,7 @@
 /*   By: pstrohal <pstrohal@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 18:38:45 by timschmi          #+#    #+#             */
-/*   Updated: 2024/09/26 15:44:58 by pstrohal         ###   ########.fr       */
+/*   Updated: 2024/09/26 21:38:41 by pstrohal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,6 @@ void	draw_tex(t_game *game, int x, t_rays *ray)
 	else
 		tex.x = game->map.textures[ray->dir]->width * fmod(ray->wallhit.y, 1.0);
 
-
-
-		
 	if (ray->dir == WEST || ray->dir == SOUTH)
 		tex.x = game->map.textures[ray->dir]->width - tex.x;
 	

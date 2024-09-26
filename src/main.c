@@ -6,7 +6,7 @@
 /*   By: pstrohal <pstrohal@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:36:56 by timschmi          #+#    #+#             */
-/*   Updated: 2024/09/26 14:08:00 by pstrohal         ###   ########.fr       */
+/*   Updated: 2024/09/26 20:01:15 by pstrohal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ void init_game(t_game *game)
 	game->player.color = 0x6cf542ff;
 	game->player.pov = 0.5;
 	game->map.str_map = NULL;
-	game->map.textures[CEILING] = mlx_load_png("./include/textures/floor.png");
-	game->map.textures[FLOOR] = mlx_load_png("./include/textures/clouds.png");
+	game->map.textures[FLOOR] = mlx_load_png("./include/textures/floor.png");
+	game->map.textures[CEILING] = mlx_load_png("./include/textures/clouds.png");
 }
 void	leaks()
 {
