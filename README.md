@@ -6,7 +6,7 @@
 
 ---
 
-![Game Screenshot](./Image)
+![Game Screenshot](./Image.png)
 
 ---
 
